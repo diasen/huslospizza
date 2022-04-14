@@ -7,7 +7,7 @@ function Header() {
       <div className='logo'>
         <Image
           src='/images/logo.svg'
-          alt='Picture of the author'
+          alt='Logo'
           width={200}
           height={200}
         ></Image>

@@ -1,5 +1,4 @@
 .logo {
-  border: 1px solid black;
   display: flex;
   justify-content: center;
 }
@@ -7,15 +6,20 @@
 .navigation {
   background-color: #606d51;
   height: 60px;
+  display: flex;
+  align-items: center;
 
   ul {
     display: flex;
     list-style-type: none;
-    align-items: center;
+    width: 80%;
+    margin: auto;
     justify-content: space-around;
+    padding: 0px;
   }
 
   a {
-    color: white;
+    color: $white;
+    font-family: $heading-font;
   }
 }

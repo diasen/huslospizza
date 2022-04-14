@@ -1,0 +1,50 @@
+// Hero container
+.heroHeading {
+  color: $text-color;
+  font-size: 9rem;
+  text-align: center;
+  font-weight: lighter;
+  margin: 100px 0 20px 0;
+}
+
+.heroSubheading {
+  color: $text-color;
+  font-size: 2rem;
+  text-align: center;
+  font-weight: lighter;
+}
+
+.heroBtn {
+  border: 2px solid $text-color;
+  color: $text-color;
+  border-radius: 10px;
+  height: 80px;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.heroBtnContainer {
+  display: flex;
+  justify-content: center;
+  margin: 100px 0;
+}
+
+// Pizza container
+.pizzaContainer {
+  background-color: $secondary-color;
+  height: 600px;
+  border: 1px solid blue;
+  display: flex;
+}
+
+.pizzaText {
+  width: 50%;
+}
+
+.pizzaImage {
+  width: 50%;
+}
