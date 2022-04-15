@@ -89,3 +89,50 @@
   text-align: center;
   font-size: 2rem;
 }
+
+// Dough container
+.pizzadoughContainer {
+  background-color: $secondary-color;
+  display: flex;
+}
+
+.pizzadoughText {
+  width: 40%;
+  color: $white;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  h3 {
+    font-size: 2.5rem;
+    font-weight: lighter;
+  }
+
+  p {
+    font-size: 1.5rem;
+  }
+}
+
+.pizzadoughImage {
+  width: 60%;
+}
+
+// Missing content
+.MissingHeading {
+  text-align: center;
+  margin: 100px 0 0 0;
+  font-size: 3rem;
+  color: $text-color;
+  font-weight: lighter;
+}
+
+.MissingTextContainer {
+  width: 70%;
+  margin: auto;
+  padding: 50px;
+}
+
+.MissingText {
+  color: $text-color;
+}

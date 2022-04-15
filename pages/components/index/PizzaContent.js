@@ -1,6 +1,6 @@
 import Image from 'next/image';
 
-function PizzaContainer() {
+function PizzaContent() {
   return (
     <div>
       <div className='pizzaContainer'>
@@ -21,10 +21,8 @@ function PizzaContainer() {
           ></Image>
         </div>
       </div>
-      <div className='pizzaDoughContainer'></div>
-      <div className='uknown'></div>
     </div>
   );
 }
 
-export default PizzaContainer;
+export default PizzaContent;

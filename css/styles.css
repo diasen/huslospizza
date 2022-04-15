@@ -80,13 +80,11 @@ a {
 .located {
   text-align: center;
   color: #fefefe;
-  border: 1px solid red;
   width: 300px;
-  height: 400px;
+  margin-bottom: 50px;
 }
 
 .copyright {
-  border: 1px solid black;
   text-align: center;
 }
 
@@ -220,5 +218,107 @@ a {
           justify-content: center;
   text-align: center;
   font-size: 2rem;
+}
+
+.pizzadoughContainer {
+  background-color: #606d51;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.pizzadoughText {
+  width: 40%;
+  color: #fefefe;
+  padding: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.pizzadoughText h3 {
+  font-size: 2.5rem;
+  font-weight: lighter;
+}
+
+.pizzadoughText p {
+  font-size: 1.5rem;
+}
+
+.pizzadoughImage {
+  width: 60%;
+}
+
+.MissingHeading {
+  text-align: center;
+  margin: 100px 0 0 0;
+  font-size: 3rem;
+  color: #272f1f;
+  font-weight: lighter;
+}
+
+.MissingTextContainer {
+  width: 70%;
+  margin: auto;
+  padding: 50px;
+}
+
+.MissingText {
+  color: #272f1f;
+}
+
+.locationsHeading {
+  text-align: center;
+  margin: 100px 0 0 0;
+  font-size: 3rem;
+  color: #272f1f;
+  font-weight: lighter;
+}
+
+.locationsSubheading {
+  text-align: center;
+  font-size: 1rem;
+  color: #272f1f;
+  font-weight: lighter;
+}
+
+.cardsContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: 500px;
+}
+
+.aboutHeading {
+  color: #272f1f;
+  font-size: 3rem;
+  text-align: center;
+  font-weight: lighter;
+  margin: 100px 0 20px 0;
+}
+
+.aboutTextContainer {
+  width: 80%;
+  margin: 100px auto;
+  color: #272f1f;
+}
+
+.aboutImageContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.aboutImage {
+  width: 50%;
 }
 /*# sourceMappingURL=styles.css.map */

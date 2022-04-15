@@ -1,0 +1,23 @@
+// Location headings
+.locationsHeading {
+  text-align: center;
+  margin: 100px 0 0 0;
+  font-size: 3rem;
+  color: $text-color;
+  font-weight: lighter;
+}
+
+.locationsSubheading {
+  text-align: center;
+  font-size: 1rem;
+  color: $text-color;
+  font-weight: lighter;
+}
+
+// Card
+
+.cardsContainer {
+  display: flex;
+  justify-content: space-around;
+  height: 500px;
+}

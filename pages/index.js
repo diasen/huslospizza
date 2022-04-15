@@ -4,8 +4,10 @@ import styles from '../css/Home.module.css';
 import Header from './components/header/Header';
 import Footer from './components/footer/Footer';
 import HeroContent from './components/index/HeroContent';
-import PizzaContainer from './components/index/PizzaContent';
-import IngredientsContainer from './components/index/IngredientsContent';
+import PizzaContent from './components/index/PizzaContent';
+import IngredientsContent from './components/index/IngredientsContent';
+import PizzadoughContent from './components/index/pizzaDoughContent';
+import MissingContent from './components/index/MissingContent';
 
 export default function Home() {
   return (
@@ -19,8 +21,10 @@ export default function Home() {
 
       <main className={styles.main}>
         <HeroContent />
-        <PizzaContainer />
-        <IngredientsContainer />
+        <PizzaContent />
+        <IngredientsContent />
+        <PizzadoughContent />
+        <MissingContent />
       </main>
 
       <Footer />

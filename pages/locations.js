@@ -3,6 +3,8 @@ import styles from '../css/Home.module.css';
 
 import Header from './components/header/Header';
 import Footer from './components/footer/Footer';
+import LocationsHeading from './components/locations/LocationsHeading';
+import LocationsSelection from './components/locations/LocationsSelection';
 
 export default function Locations() {
   return (
@@ -15,9 +17,8 @@ export default function Locations() {
       <Header />
 
       <main className={styles.main}>
-        <h1 className=''>Velg din restaurant</h1>
-        <p>Se meny, åpningtider og kontaktinfo</p>
-        <a href='/sarpsborg'>Sarpsborg</a>
+        <LocationsHeading />
+        <LocationsSelection />
       </main>
 
       <Footer />
