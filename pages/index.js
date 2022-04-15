@@ -1,10 +1,11 @@
 import Head from 'next/head';
 import styles from '../css/Home.module.css';
-import Link from 'next/link';
-import Image from 'next/image';
 
 import Header from './components/header/Header';
 import Footer from './components/footer/Footer';
+import HeroContent from './components/index/HeroContent';
+import PizzaContainer from './components/index/PizzaContent';
+import IngredientsContainer from './components/index/IngredientsContent';
 
 export default function Home() {
   return (
@@ -17,40 +18,9 @@ export default function Home() {
       <Header />
 
       <main className={styles.main}>
-        <div className='heroContainer'>
-          <div>
-            <h1 className='heroHeading'>Velkommen til Husløs pizza</h1>
-            <h3 className='heroSubheading'>
-              Se vårt store utvalg av delikate steinovnsbakte pizzaer
-            </h3>
-          </div>
-          <div className='heroBtnContainer'>
-            <Link href='/locations'>
-              <a className='heroBtn'>Velg lokasjon</a>
-            </Link>
-          </div>
-          <div className='pizzaContainer'>
-            <div className='pizzaText'>
-              <h3>Pizzadeig laget på gamle italienske traidisjoner.</h3>
-              <p>
-                Deigen er basert norske råvarer av beste kvalitet og får en
-                hevetid på 72 timer, noe som gjør deigen helt spesiell og
-                ekstremt luftig
-              </p>
-            </div>
-            <div className='pizzaImage'>
-              <Image
-                src='/images/logo.svg'
-                alt='Logo'
-                width={200}
-                height={200}
-              ></Image>
-            </div>
-          </div>
-          <div className='ingredientsContainer'></div>
-          <div className='pizzaDoughContainer'></div>
-          <div className='uknown'></div>
-        </div>
+        <HeroContent />
+        <PizzaContainer />
+        <IngredientsContainer />
       </main>
 
       <Footer />

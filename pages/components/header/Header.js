@@ -1,7 +1,10 @@
 import Link from 'next/link';
 import Image from 'next/image';
+import { useRouter } from 'next/router';
 
 function Header() {
+  const router = useRouter();
+
   return (
     <div className='header'>
       <div className='logo'>
@@ -16,22 +19,32 @@ function Header() {
         <ul>
           <li>
             <Link href='/'>
-              <a>Hjem</a>
+              <a className={router.pathname == '/' ? 'active' : ''}>Home</a>
             </Link>
           </li>
           <li>
             <Link href='/locations'>
-              <a>Lokasjoner</a>
+              <a className={router.pathname == '/locations' ? 'active' : ''}>
+                Lokasjoner
+              </a>
             </Link>
           </li>
           <li>
             <Link href='/about'>
-              <a>Om oss</a>
+              <a className={router.pathname == '/about' ? 'active' : ''}>
+                Om oss
+              </a>
             </Link>
           </li>
           <li>
             <Link href='/companyagreement'>
-              <a>Firmaavtale</a>
+              <a
+                className={
+                  router.pathname == '/companyagreement' ? 'active' : ''
+                }
+              >
+                Firmaavtale
+              </a>
             </Link>
           </li>
         </ul>

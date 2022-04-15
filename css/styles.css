@@ -150,18 +150,75 @@ a {
 
 .pizzaContainer {
   background-color: #606d51;
-  height: 600px;
-  border: 1px solid blue;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
 .pizzaText {
-  width: 50%;
+  width: 40%;
+  color: #fefefe;
+  padding: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.pizzaText h3 {
+  font-size: 2.5rem;
+  font-weight: lighter;
+}
+
+.pizzaText p {
+  font-size: 1.5rem;
 }
 
 .pizzaImage {
-  width: 50%;
+  width: 60%;
+}
+
+.ingredientsHeading {
+  text-align: center;
+  margin: 100px 0;
+  font-size: 3rem;
+  color: #272f1f;
+  font-weight: lighter;
+}
+
+.ingredientBtnContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 100px 0;
+}
+
+.ingredientBtn {
+  border: 2px solid #272f1f;
+  color: #272f1f;
+  border-radius: 10px;
+  height: 80px;
+  width: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  font-size: 2rem;
 }
 /*# sourceMappingURL=styles.css.map */
