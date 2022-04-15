@@ -316,9 +316,12 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-bottom: 100px;
 }
 
 .aboutImage {
-  width: 50%;
+  width: 40%;
 }
 /*# sourceMappingURL=styles.css.map */
