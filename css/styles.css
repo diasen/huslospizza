@@ -397,4 +397,96 @@ a {
   background-color: #606d51;
   color: #fefefe;
 }
+
+.sarpsborgHeading {
+  text-align: center;
+  margin: 50px 0 0 0;
+  font-size: 3rem;
+  color: #272f1f;
+  font-weight: lighter;
+}
+
+.sarpsborgSubheading {
+  text-align: center;
+  font-size: 1rem;
+  color: #272f1f;
+  font-weight: lighter;
+}
+
+.sarpsborgContent {
+  border: 1px solid red;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 70%;
+  margin: 100px auto;
+}
+
+.maps {
+  width: 30%;
+  height: 350px;
+  border: 1px solid green;
+}
+
+.story {
+  width: 30%;
+  height: 350px;
+  border: 1px solid blue;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.story p {
+  width: 80%;
+}
+
+.menuSarpsborgBtn {
+  border: 2px solid #272f1f;
+  color: #272f1f;
+  border-radius: 10px;
+  height: 50px;
+  width: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.returnBtnContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  width: 90%;
+  margin: 50px auto;
+}
+
+.returnBtn {
+  border: none;
+  color: #606d51;
+  background-color: #fcfaea;
+  cursor: pointer;
+}
 /*# sourceMappingURL=styles.css.map */

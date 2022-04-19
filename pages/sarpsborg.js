@@ -4,6 +4,8 @@ import styles from '../css/Home.module.css';
 import Return from '../components/return/Return';
 import Headercomponent from '../components/header/Headercomponent';
 import Footercomponent from '../components/footer/Footercomponent';
+import Sarpsborgheading from '../components/sarpsborg/Sarpsborgheading';
+import Sarpsborgabout from '../components/sarpsborg/Sarpsborgabout';
 
 export default function Sarpsborg() {
   return (
@@ -17,8 +19,8 @@ export default function Sarpsborg() {
 
       <main className={styles.main}>
         <Return />
-        <h1 className=''>Sarpsborg</h1>
-        <p>Se meny, åpningtider og kontaktinfo</p>
+        <Sarpsborgheading />
+        <Sarpsborgabout />
       </main>
 
       <Footercomponent />

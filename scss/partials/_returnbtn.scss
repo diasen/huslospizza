@@ -1,0 +1,13 @@
+.returnBtnContainer {
+  display: flex;
+  justify-content: flex-end;
+  width: 90%;
+  margin: 50px auto;
+}
+
+.returnBtn {
+  border: none;
+  color: $secondary-color;
+  background-color: $primary-color;
+  cursor: pointer;
+}
