@@ -73,6 +73,8 @@ a {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .openingHours,
@@ -103,7 +105,7 @@ a {
 
 .heroHeading {
   color: #272f1f;
-  font-size: 9rem;
+  font-size: 7rem;
   text-align: center;
   font-weight: lighter;
   margin: 100px 0 20px 0;
@@ -272,6 +274,7 @@ a {
 
 .MissingText {
   color: #272f1f;
+  font-size: 1.2rem;
 }
 
 .locationsHeading {
@@ -295,7 +298,43 @@ a {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  height: 500px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 100px auto;
+  row-gap: 30px;
+  -webkit-column-gap: 30px;
+          column-gap: 30px;
+  max-width: 1200px;
+}
+
+.lacationCards {
+  display: block;
+  top: 0px;
+  position: relative;
+  max-width: 300px;
+  background-color: #fcfaea;
+  border-radius: 4px;
+  margin: 12px;
+  text-decoration: none;
+  z-index: 0;
+  overflow: hidden;
+  border: 1px solid #f2f8f9;
+  cursor: pointer;
+}
+
+.lacationCards:hover {
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+  -webkit-box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.2);
+          box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.2);
+  top: -4px;
+  border: 1px solid #cccccc;
+  background-color: white;
+}
+
+.lacationCards:hover:before {
+  -webkit-transform: scale(2.15);
+          transform: scale(2.15);
 }
 
 .aboutHeading {
@@ -323,5 +362,39 @@ a {
 
 .aboutImage {
   width: 40%;
+}
+
+.agreementHeading {
+  color: #272f1f;
+  font-size: 3rem;
+  text-align: center;
+  font-weight: lighter;
+  margin: 100px 0 20px 0;
+}
+
+.agreementTextContainer {
+  width: 80%;
+  text-align: center;
+  margin: 50px auto;
+  color: #272f1f;
+}
+
+.formContainer {
+  width: 500px;
+  margin: 100px auto;
+}
+
+.submitbtn {
+  margin: 30px 0;
+  width: 140px;
+  height: 35px;
+  background-color: #fcfaea;
+  border: 2px solid #606d51;
+  color: #606d51;
+}
+
+.submitbtn:hover {
+  background-color: #606d51;
+  color: #fefefe;
 }
 /*# sourceMappingURL=styles.css.map */

@@ -17,6 +17,7 @@
     "@mantine/next": "^4.1.3",
     "@mantine/notifications": "^4.1.3",
     "dayjs": "^1.11.1",
+    "formik": "^2.2.9",
     "next": "12.1.4",
     "react": "18.0.0",
     "react-dom": "18.0.0",
