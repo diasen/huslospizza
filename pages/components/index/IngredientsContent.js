@@ -1,6 +1,6 @@
 import Link from 'next/link';
 
-function IngredientsContent() {
+function Ingredientscontent() {
   return (
     <div>
       <h2 className='ingredientsHeading'>Nyt av ferske norske ingredienser</h2>
@@ -13,4 +13,4 @@ function IngredientsContent() {
   );
 }
 
-export default IngredientsContent;
+export default Ingredientscontent;

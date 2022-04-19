@@ -1,4 +1,4 @@
-function LocationsHeading() {
+function Locationsheading() {
   return (
     <div>
       <h1 className='locationsHeading'>Velg din restaurant</h1>
@@ -9,4 +9,4 @@ function LocationsHeading() {
   );
 }
 
-export default LocationsHeading;
+export default Locationsheading;

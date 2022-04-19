@@ -1,6 +1,6 @@
 import Image from 'next/image';
 
-function AboutContent() {
+function Aboutcontent() {
   return (
     <div>
       <h1 className='aboutHeading'>Vår historie</h1>
@@ -45,4 +45,4 @@ function AboutContent() {
   );
 }
 
-export default AboutContent;
+export default Aboutcontent;

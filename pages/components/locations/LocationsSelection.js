@@ -9,7 +9,7 @@ import {
   useMantineTheme,
 } from '@mantine/core';
 
-function LocationsSelection() {
+function Locationsselection() {
   const theme = useMantineTheme();
 
   const secondaryColor =
@@ -110,4 +110,4 @@ function LocationsSelection() {
   );
 }
 
-export default LocationsSelection;
+export default Locationsselection;

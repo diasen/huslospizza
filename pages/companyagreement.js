@@ -1,6 +1,6 @@
-import Footer from './components/footer/Footer';
-import Header from './components/header/Header';
-import Agreementform from './components/companyagreement/AgreementForm';
+import Footer from './components/footer/footer';
+import Header from './components/header/header';
+import Agreementform from './components/companyagreement/agreementForm';
 import AgreementHeading from './components/companyagreement/agreementHeading';
 
 function Companyagreement() {

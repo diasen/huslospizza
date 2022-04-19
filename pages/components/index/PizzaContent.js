@@ -1,6 +1,6 @@
 import Image from 'next/image';
 
-function PizzaContent() {
+function Pizzacontent() {
   return (
     <div>
       <div className='pizzaContainer'>
@@ -25,4 +25,4 @@ function PizzaContent() {
   );
 }
 
-export default PizzaContent;
+export default Pizzacontent;

@@ -1,4 +1,4 @@
-function AgreementHeading() {
+function Agreementheading() {
   return (
     <div>
       <h1 className='agreementHeading'>Søk om firmaavtale</h1>
@@ -11,4 +11,4 @@ function AgreementHeading() {
   );
 }
 
-export default AgreementHeading;
+export default Agreementheading;

@@ -1,4 +1,4 @@
-function MissingContent() {
+function Missingcontent() {
   return (
     <div>
       <h2 className='MissingHeading'>Nyt av ferske norske ingredienser</h2>
@@ -26,4 +26,4 @@ function MissingContent() {
   );
 }
 
-export default MissingContent;
+export default Missingcontent;

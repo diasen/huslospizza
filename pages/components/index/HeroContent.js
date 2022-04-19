@@ -1,6 +1,6 @@
 import Link from 'next/link';
 
-function HeroContent() {
+function Herocontent() {
   return (
     <div>
       <h1 className='heroHeading'>Velkommen til Husløs pizza</h1>
@@ -16,4 +16,4 @@ function HeroContent() {
   );
 }
 
-export default HeroContent;
+export default Herocontent;
