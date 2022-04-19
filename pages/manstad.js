@@ -1,9 +1,9 @@
 import Head from 'next/head';
 import styles from '../css/Home.module.css';
 
-import Headercomponent from './components/header/Headercomponent';
-import Footercomponent from './components/footer/Footercomponent';
-import Return from './components/return/Return';
+import Headercomponent from '../components/header/Headercomponent';
+import Footercomponent from '../components/footer/Footercomponent';
+import Return from '../components/return/Return';
 
 export default function Sarpsborg() {
   return (
