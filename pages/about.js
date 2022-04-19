@@ -1,6 +1,6 @@
-import Footercomponent from './components/footer/Footercomponent';
-import Headercomponent from './components/header/Headercomponent';
-import Aboutcontent from './components/about/Aboutcontent';
+import Aboutcontent from '../components/about/Aboutcontent';
+import Footercomponent from '../components/footer/Footercomponent';
+import Headercomponent from '../components/header/Headercomponent';
 
 function About() {
   return (

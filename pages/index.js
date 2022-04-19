@@ -1,13 +1,13 @@
 import Head from 'next/head';
 import styles from '../css/Home.module.css';
 
-import Headercomponent from './components/header/Headercomponent';
-import Footercomponent from './components/footer/Footercomponent';
-import Herocontent from './components/index/Herocontent';
-import Pizzacontent from './components/index/Pizzacontent';
-import Ingredientscontent from './components/index/Ingredientscontent';
-import Pizzadoughcontent from './components/index/Pizzadoughcontent';
-import Missingcontent from './components/index/Missingcontent';
+import Headercomponent from '../components/header/Headercomponent';
+import Footercomponent from '../components/footer/Footercomponent';
+import Herocontent from '../components/index/Herocontent';
+import Pizzacontent from '../components/index/Pizzacontent';
+import Ingredientscontent from '../components/index/Ingredientscontent';
+import Pizzadoughcontent from '../components/index/Pizzadoughcontent';
+import Missingcontent from '../components/index/Missingcontent';
 
 export default function Home() {
   return (
