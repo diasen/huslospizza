@@ -2,7 +2,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { useRouter } from 'next/router';
 
-function Header() {
+function Headercomponent() {
   const router = useRouter();
 
   return (
@@ -53,4 +53,4 @@ function Header() {
   );
 }
 
-export default Header;
+export default Headercomponent;
