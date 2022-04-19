@@ -3,8 +3,8 @@ import styles from '../css/Home.module.css';
 
 import Header from './components/header/Header';
 import Footer from './components/footer/Footer';
-import LocationsHeading from './components/locations/LocationsHeading';
-import LocationsSelection from './components/locations/LocationsSelection';
+import Locationsheading from './components/locations/Locationsheading';
+import Locationsselection from './components/locations/Locationsselection';
 
 export default function Locations() {
   return (
@@ -17,8 +17,8 @@ export default function Locations() {
       <Header />
 
       <main className={styles.main}>
-        <LocationsHeading />
-        <LocationsSelection />
+        <Locationsheading />
+        <Locationsselection />
       </main>
 
       <Footer />

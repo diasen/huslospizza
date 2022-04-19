@@ -3,11 +3,11 @@ import styles from '../css/Home.module.css';
 
 import Header from './components/header/header';
 import Footer from './components/footer/footer';
-import HeroContent from './components/index/heroContent';
-import PizzaContent from './components/index/pizzaContent';
-import IngredientsContent from './components/index/ingredientsContent';
-import Pizzadoughcontent from './components/index/pizzaDoughContent';
-import MissingContent from './components/index/missingContent';
+import Herocontent from './components/index/Herocontent';
+import Pizzacontent from './components/index/Pizzacontent';
+import Ingredientscontent from './components/index/Ingredientscontent';
+import Pizzadoughcontent from './components/index/Pizzadoughcontent';
+import Missingcontent from './components/index/Missingcontent';
 
 export default function Home() {
   return (
@@ -20,11 +20,11 @@ export default function Home() {
       <Header />
 
       <main className={styles.main}>
-        <HeroContent />
-        <PizzaContent />
-        <IngredientsContent />
+        <Herocontent />
+        <Pizzacontent />
+        <Ingredientscontent />
         <Pizzadoughcontent />
-        <MissingContent />
+        <Missingcontent />
       </main>
 
       <Footer />
