@@ -1,10 +1,10 @@
 import Head from 'next/head';
 import styles from '../css/Home.module.css';
 
-import Headercomponent from './components/header/Headercomponent';
-import Footercomponent from './components/footer/Footercomponent';
-import Locationsheading from './components/locations/Locationsheading';
-import Locationsselection from './components/locations/Locationsselection';
+import Headercomponent from '../components/header/Headercomponent';
+import Footercomponent from '../components/footer/Footercomponent';
+import Locationsheading from '../components/locations/Locationsheading';
+import Locationsselection from '../components/locations/Locationsselection';
 
 export default function Locations() {
   return (
