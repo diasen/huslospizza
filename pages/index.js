@@ -6,7 +6,7 @@ import Footer from './components/footer/Footer';
 import HeroContent from './components/index/HeroContent';
 import PizzaContent from './components/index/PizzaContent';
 import IngredientsContent from './components/index/IngredientsContent';
-import PizzadoughContent from './components/index/pizzaDoughContent';
+import Pizzadoughcontent from './components/index/pizzaDoughcontent';
 import MissingContent from './components/index/MissingContent';
 
 export default function Home() {
@@ -23,7 +23,7 @@ export default function Home() {
         <HeroContent />
         <PizzaContent />
         <IngredientsContent />
-        <PizzadoughContent />
+        <Pizzadoughcontent />
         <MissingContent />
       </main>
 
