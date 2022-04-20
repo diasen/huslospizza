@@ -1,4 +1,7 @@
 // Hero container
+.heroContainer {
+  min-height: 550px;
+}
 .heroHeading {
   color: $text-color;
   font-size: 7rem;
@@ -62,6 +65,9 @@
 }
 
 // Ingredient container
+.ingredientsContainer {
+  min-height: 450px;
+}
 
 .ingredientsHeading {
   text-align: center;
@@ -129,7 +135,7 @@
 
 .MissingTextContainer {
   width: 70%;
-  margin: auto;
+  margin: 50px auto 100px auto;
   padding: 50px;
 }
 

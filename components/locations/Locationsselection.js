@@ -1,13 +1,6 @@
 import Link from 'next/link';
-import {
-  Card,
-  Image,
-  Text,
-  Badge,
-  Button,
-  Group,
-  useMantineTheme,
-} from '@mantine/core';
+import { Card, Image, Text, Group, useMantineTheme } from '@mantine/core';
+import { restaurants } from '../../configs/Restaurantarray';
 
 function Locationsselection() {
   const theme = useMantineTheme();
@@ -17,95 +10,47 @@ function Locationsselection() {
 
   return (
     <div className='cardsContainer'>
-      <div style={{ width: 340, margin: 'auto' }} className='lacationCards'>
-        <Link href='/manstad' passHref>
-          <Card shadow='sm' p='lg'>
-            <Card.Section>
-              <Image
-                src='./images/manstad.jpg'
-                height={200}
-                alt='Manstad front'
-              />
-            </Card.Section>
+      {restaurants.map(({ id, name, adress, phone }) => (
+        <div
+          key={id}
+          style={{ width: 340, margin: 'auto' }}
+          className='lacationCards'
+        >
+          <Link href='/manstad' passHref>
+            <Card shadow='sm' p='lg'>
+              <Card.Section>
+                <Image
+                  src='./images/manstad.jpg'
+                  height={200}
+                  alt='Manstad front'
+                />
+              </Card.Section>
 
-            <Group
-              position='apart'
-              style={{ marginBottom: 5, marginTop: theme.spacing.sm }}
-            >
-              <Text weight={500} size='xl'>
-                Manstad
+              <Group
+                position='apart'
+                style={{ marginBottom: 5, marginTop: theme.spacing.sm }}
+              >
+                <Text weight={500} size='xl'>
+                  {name}
+                </Text>
+              </Group>
+
+              <Text
+                size='md'
+                style={{ color: secondaryColor, lineHeight: 1.5 }}
+              >
+                {adress}
               </Text>
-            </Group>
-
-            <Text size='md' style={{ color: secondaryColor, lineHeight: 1.5 }}>
-              Lervikveien 28, 1626 Manstad
-            </Text>
-            <Text size='md' style={{ color: secondaryColor, lineHeight: 1.5 }}>
-              Tlf: 900 00 00
-            </Text>
-          </Card>
-        </Link>
-      </div>
-
-      <div style={{ width: 340, margin: 'auto' }} className='lacationCards'>
-        <Link href='/vikane' passHref>
-          <Card shadow='sm' p='lg'>
-            <Card.Section>
-              <Image
-                src='./images/vikane.jpg'
-                height={200}
-                alt='Manstad front'
-              />
-            </Card.Section>
-
-            <Group
-              position='apart'
-              style={{ marginBottom: 5, marginTop: theme.spacing.sm }}
-            >
-              <Text weight={500} size='xl'>
-                Vikane
+              <Text
+                size='md'
+                style={{ color: secondaryColor, lineHeight: 1.5 }}
+              >
+                {phone}
               </Text>
-            </Group>
-
-            <Text size='md' style={{ color: secondaryColor, lineHeight: 1.5 }}>
-              Vikaneveien 325, 1621 Gressvik
-            </Text>
-            <Text size='md' style={{ color: secondaryColor, lineHeight: 1.5 }}>
-              Tlf: 900 00 00
-            </Text>
-          </Card>
-        </Link>
-      </div>
-
-      <div style={{ width: 340, margin: 'auto' }} className='lacationCards'>
-        <Link href='/sarpsborg' passHref>
-          <Card shadow='sm' p='lg'>
-            <Card.Section>
-              <Image
-                src='./images/sarpsborg.jpg'
-                height={200}
-                alt='Manstad front'
-              />
-            </Card.Section>
-
-            <Group
-              position='apart'
-              style={{ marginBottom: 5, marginTop: theme.spacing.sm }}
-            >
-              <Text weight={500} size='xl'>
-                Sarpsborg
-              </Text>
-            </Group>
-
-            <Text size='md' style={{ color: secondaryColor, lineHeight: 1.5 }}>
-              St. Marie gate, 1706 Sarpsborg
-            </Text>
-            <Text size='md' style={{ color: secondaryColor, lineHeight: 1.5 }}>
-              Tlf: 900 00 00
-            </Text>
-          </Card>
-        </Link>
-      </div>
+            </Card>
+          </Link>
+        </div>
+      ))}
     </div>
   );
 }

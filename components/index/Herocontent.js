@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 function Herocontent() {
   return (
-    <div>
+    <div className='heroContainer'>
       <h1 className='heroHeading'>Velkommen til Husløs pizza</h1>
       <h3 className='heroSubheading'>
         Se vårt store utvalg av delikate steinovnsbakte pizzaer

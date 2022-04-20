@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 function Ingredientscontent() {
   return (
-    <div>
+    <div className='ingredientsContainer'>
       <h2 className='ingredientsHeading'>Nyt av ferske norske ingredienser</h2>
       <div className='ingredientBtnContainer'>
         <Link href='/locations'>
