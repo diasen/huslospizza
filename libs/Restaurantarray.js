@@ -1,4 +1,4 @@
-export const restaurants = [
+const restaurantJson = [
   {
     id: '1',
     name: 'Manstad',
@@ -22,7 +22,6 @@ export const restaurants = [
     about:
       'Vår resturant i Sarpsborg ble nylig åpent og for en velkomst det har vært. Bakgrunnen for at vi valgte å åpne her er på grunn av relasjoner og ikke minst troen på et marked som mangler god italiensk pizza.',
     hours: [
-      { onsdag: '12-16' },
       { torsdag: '12-16' },
       { fredag: '12-16' },
       { lørdag: '12-16' },
@@ -41,7 +40,9 @@ export const restaurants = [
       { torsdag: '12-16' },
       { fredag: '12-16' },
       { lørdag: '12-16' },
-      { søndag: '12-16' },
+      ,
     ],
   },
 ];
+
+export default restaurantJson;

@@ -1,11 +1,11 @@
 import Head from 'next/head';
 import styles from '../css/Home.module.css';
-
 import Return from '../components/return/Return';
-import Headercomponent from '../components/header/Headercomponent';
-import Footercomponent from '../components/footer/Footercomponent';
+
+import Header from '../components/header/Header';
 import Sarpsborgheading from '../components/sarpsborg/Sarpsborgheading';
 import Sarpsborgabout from '../components/sarpsborg/Sarpsborgabout';
+import Footer from '../components/footer/Footer';
 
 export default function Sarpsborg() {
   return (
@@ -17,13 +17,13 @@ export default function Sarpsborg() {
       </Head>
 
       <main className={styles.main}>
-        <Headercomponent />
+        <Header />
         <Return />
         <Sarpsborgheading />
         <Sarpsborgabout />
       </main>
 
-      <Footercomponent />
+      <Footer />
     </div>
   );
 }

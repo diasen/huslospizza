@@ -1,15 +1,15 @@
-import Footercomponent from '../components/footer/Footercomponent';
-import Headercomponent from '../components/header/Headercomponent';
+import Header from '../components/header/Header';
 import Agreementheading from '../components/companyagreement/Agreementheading';
 import Agreementform from '../components/companyagreement/Agreementform';
+import Footer from '../components/footer/Footer';
 
 function Companyagreement() {
   return (
     <div>
-      <Headercomponent />
+      <Header />
       <Agreementheading />
       <Agreementform />
-      <Footercomponent />
+      <Footer />
     </div>
   );
 }

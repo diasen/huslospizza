@@ -1,13 +1,13 @@
+import Header from '../components/header/Header';
 import Aboutcontent from '../components/about/Aboutcontent';
-import Footercomponent from '../components/footer/Footercomponent';
-import Headercomponent from '../components/header/Headercomponent';
+import Footer from '../components/footer/Footer';
 
 function About() {
   return (
     <div>
-      <Headercomponent />
+      <Header />
       <Aboutcontent />
-      <Footercomponent />
+      <Footer />
     </div>
   );
 }

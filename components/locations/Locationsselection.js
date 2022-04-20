@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { Card, Image, Text, Group, useMantineTheme } from '@mantine/core';
-import { restaurants } from '../../configs/Restaurantarray';
+import restaurantJson from '../../libs/Restaurantarray';
 
 function Locationsselection() {
   const theme = useMantineTheme();
@@ -10,7 +10,7 @@ function Locationsselection() {
 
   return (
     <div className='cardsContainer'>
-      {restaurants.map(({ id, name, adress, phone }) => (
+      {restaurantJson.map(({ id, name, adress, phone }) => (
         <div
           key={id}
           style={{ width: 340, margin: 'auto' }}

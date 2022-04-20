@@ -2,7 +2,7 @@ import Image from 'next/image';
 import { FaInstagramSquare, FaFacebookSquare } from 'react-icons/fa';
 import { IconContext } from 'react-icons';
 
-function Footercomponent() {
+function Footer() {
   return (
     <div className='footer'>
       <div className='footerMain'>
@@ -68,4 +68,4 @@ function Footercomponent() {
   );
 }
 
-export default Footercomponent;
+export default Footer;

@@ -2,7 +2,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { useRouter } from 'next/router';
 
-function Headercomponent() {
+function Header() {
   const router = useRouter();
 
   return (
@@ -19,19 +19,19 @@ function Headercomponent() {
         <ul>
           <li>
             <Link href='/'>
-              <a className={router.pathname == '/' ? 'active' : ''}>Home</a>
+              <a className={router.pathname == '/' ? 'active' : 'red'}>Home</a>
             </Link>
           </li>
           <li>
             <Link href='/locations'>
-              <a className={router.pathname == '/locations' ? 'active' : ''}>
+              <a className={router.pathname == '/locations' ? 'active' : 'red'}>
                 Lokasjoner
               </a>
             </Link>
           </li>
           <li>
             <Link href='/about'>
-              <a className={router.pathname == '/about' ? 'active' : ''}>
+              <a className={router.pathname == '/about' ? 'active' : 'red'}>
                 Om oss
               </a>
             </Link>
@@ -40,7 +40,7 @@ function Headercomponent() {
             <Link href='/companyagreement'>
               <a
                 className={
-                  router.pathname == '/companyagreement' ? 'active' : ''
+                  router.pathname == '/companyagreement' ? 'active' : 'red'
                 }
               >
                 Firmaavtale
@@ -53,4 +53,4 @@ function Headercomponent() {
   );
 }
 
-export default Headercomponent;
+export default Header;
