@@ -6,6 +6,7 @@ import Header from '../components/header/Header';
 import Sarpsborgheading from '../components/sarpsborg/Sarpsborgheading';
 import Sarpsborgabout from '../components/sarpsborg/Sarpsborgabout';
 import Footer from '../components/footer/Footer';
+import { NavBar } from '../components/navbar/Navbar';
 
 export default function Sarpsborg() {
   return (
@@ -19,6 +20,7 @@ export default function Sarpsborg() {
       <main className={styles.main}>
         <Header />
         <Return />
+        <NavBar />
         <Sarpsborgheading />
         <Sarpsborgabout />
       </main>

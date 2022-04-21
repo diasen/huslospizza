@@ -4,6 +4,7 @@ const restaurantJson = [
     name: 'Manstad',
     adress: 'Lervikveien 28, 1626 Manstad',
     phone: '900 00 00',
+    src: './images/manstad.jpg',
     about:
       'Vår resturant i Sarpsborg ble nylig åpent og for en velkomst det har vært. Bakgrunnen for at vi valgte å åpne her er på grunn av relasjoner og ikke minst troen på et marked som mangler god italiensk pizza.',
     hours: [
@@ -19,6 +20,7 @@ const restaurantJson = [
     name: 'Vikane',
     adress: 'Vikaneveien 325, 1621 Gressvik',
     phone: '900 00 01',
+    src: './images/vikane.jpg',
     about:
       'Vår resturant i Sarpsborg ble nylig åpent og for en velkomst det har vært. Bakgrunnen for at vi valgte å åpne her er på grunn av relasjoner og ikke minst troen på et marked som mangler god italiensk pizza.',
     hours: [
@@ -33,6 +35,7 @@ const restaurantJson = [
     name: 'Sarpsborg',
     adress: 'St. Marie gate, 1706 Sarpsborg',
     phone: '900 00 02',
+    src: './images/sarpsborg.jpg',
     about:
       'Vår resturant i Sarpsborg ble nylig åpent og for en velkomst det har vært. Bakgrunnen for at vi valgte å åpne her er på grunn av relasjoner og ikke minst troen på et marked som mangler god italiensk pizza.',
     hours: [

@@ -10,7 +10,7 @@ function Locationsselection() {
 
   return (
     <div className='cardsContainer'>
-      {restaurantJson.map(({ id, name, adress, phone }) => (
+      {restaurantJson.map(({ id, src, name, adress, phone }) => (
         <div
           key={id}
           style={{ width: 340, margin: 'auto' }}
@@ -19,11 +19,7 @@ function Locationsselection() {
           <Link href='/manstad' passHref>
             <Card shadow='sm' p='lg'>
               <Card.Section>
-                <Image
-                  src='./images/manstad.jpg'
-                  height={200}
-                  alt='Manstad front'
-                />
+                <Image src={src} height={200} alt='store front' />
               </Card.Section>
 
               <Group
