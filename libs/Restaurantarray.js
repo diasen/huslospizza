@@ -2,6 +2,7 @@ const restaurantJson = [
   {
     id: '1',
     name: 'Manstad',
+    url: '/restaurants/manstad',
     adress: 'Lervikveien 28, 1626 Manstad',
     phone: '900 00 00',
     src: './images/manstad.jpg',
@@ -18,6 +19,7 @@ const restaurantJson = [
   {
     id: '2',
     name: 'Vikane',
+    url: '/restaurants/vikane',
     adress: 'Vikaneveien 325, 1621 Gressvik',
     phone: '900 00 01',
     src: './images/vikane.jpg',
@@ -33,6 +35,7 @@ const restaurantJson = [
   {
     id: '3',
     name: 'Sarpsborg',
+    url: '/restaurants/sarpsborg',
     adress: 'St. Marie gate, 1706 Sarpsborg',
     phone: '900 00 02',
     src: './images/sarpsborg.jpg',
