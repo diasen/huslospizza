@@ -18,12 +18,9 @@ function Locationsselection() {
 
   const secondaryColor =
     theme.colorScheme === 'dark' ? theme.colors.dark[1] : theme.colors.gray[7];
-
-  console.log(restaurantJson.results);
-
   return (
     <div className='cardsContainer'>
-      {restaurantJson.map(({ id, src, name, adress, phone }) => (
+      {restaurantJson.map(({ id, src, name, adress, phone, url }) => (
         <div
           key={id}
           style={{ width: 340, margin: 'auto' }}
@@ -50,9 +47,6 @@ function Locationsselection() {
               {phone}
             </Text>
           </Card>
-          <Button>
-            <a href='restaurants/vikane'>{vikane} name</a>
-          </Button>
         </div>
       ))}
     </div>

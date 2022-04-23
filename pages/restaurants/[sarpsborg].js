@@ -1,12 +1,6 @@
 import Head from 'next/head';
 import Return from '../../components/return/Return';
 
-import Header from '../../components/header/Header';
-import Sarpsborgheading from '../../components/sarpsborg/Sarpsborgheading';
-import Sarpsborgabout from '../../components/sarpsborg/Sarpsborgabout';
-import Footer from '../../components/footer/Footer';
-import { NavBar } from '../../components/navbar/Navbar';
-
 export default function Sarpsborg() {
   return (
     <div>
@@ -17,11 +11,10 @@ export default function Sarpsborg() {
       </Head>
 
       <main>
+        <Return />
         <h1 className=''>Sarpsborg</h1>
         <p>Se meny, åpningtider og kontaktinfo</p>
       </main>
-
-      <Footer />
     </div>
   );
 }
