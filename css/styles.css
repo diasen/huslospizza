@@ -497,4 +497,80 @@ a {
   background-color: #fcfaea;
   cursor: pointer;
 }
+
+.locationSpesificHeader {
+  text-align: center;
+}
+
+.locationSpesificText {
+  text-align: center;
+}
+
+.restaurantContent {
+  width: 80%;
+  margin: 50px auto 100px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.mapContent {
+  width: 40%;
+}
+
+.restaurantText {
+  width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.menuBtnContainer {
+  margin: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.menuBtn {
+  border: 2px solid #272f1f;
+  color: #272f1f;
+  border-radius: 10px;
+  height: 55px;
+  width: 270px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.menuBtn:hover {
+  background-color: #606d51;
+  color: #fefefe;
+  border: none;
+}
 /*# sourceMappingURL=styles.css.map */

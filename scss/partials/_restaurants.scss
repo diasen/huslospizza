@@ -1,0 +1,52 @@
+.locationSpesificHeader {
+  text-align: center;
+}
+
+.locationSpesificText {
+  text-align: center;
+}
+
+.restaurantContent {
+  width: 80%;
+  margin: 50px auto 100px auto;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.mapContent {
+  width: 40%;
+}
+
+.restaurantText {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.menuBtnContainer {
+  margin: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.menuBtn {
+  border: 2px solid $text-color;
+  color: $text-color;
+  border-radius: 10px;
+  height: 55px;
+  width: 270px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+
+  &:hover {
+    background-color: $secondary-color;
+    color: $white;
+    border: none;
+  }
+}
