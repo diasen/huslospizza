@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 import Return from '../../components/return/Return';
 
-export default function Sarpsborg() {
+export default function Manstad() {
   return (
     <div>
       <Head>
@@ -24,7 +24,7 @@ export default function Sarpsborg() {
           </p>
           <p className='locationSpesificText'> 900 00 000</p>
           <div className='menuBtnContainer'>
-            <Link href='/restaurants/manstad/menu'>
+            <Link href='/restaurants/menumanstad'>
               <a className='menuBtn'>Se vår meny</a>
             </Link>
           </div>

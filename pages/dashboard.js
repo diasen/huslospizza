@@ -10,6 +10,7 @@ export default function Home() {
       <td>{element.mass}</td>
     </tr>
   ));
+
   return (
     <div>
       <Head>

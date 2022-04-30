@@ -3,7 +3,7 @@ import Return from '../../components/return/Return';
 import Image from 'next/image';
 import Link from 'next/link';
 
-export default function Sarpsborg() {
+export default function Vikane() {
   return (
     <div>
       <Head>
