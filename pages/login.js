@@ -1,6 +1,12 @@
 import Head from 'next/head';
+import axios from 'axios';
+import Authentication from '../components/login/login';
 
-export default function Login() {
+axios.get('http://localhost:1337/api/restaurants').then((response) => {
+  console.log(response.data.data);
+});
+
+export default function Login(restaurants) {
   return (
     <div>
       <Head>
@@ -9,7 +15,7 @@ export default function Login() {
       </Head>
 
       <main>
-        <div>log in here</div>
+        <Authentication />
       </main>
     </div>
   );

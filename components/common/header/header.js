@@ -29,7 +29,7 @@ const Header = () => (
           </Link>
         </li>
         <li>
-          <Link href='/companyagreement'>
+          <Link href='/login'>
             <a>Log in</a>
           </Link>
         </li>
