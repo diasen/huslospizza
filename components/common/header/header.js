@@ -1,8 +1,12 @@
 import Link from 'next/link';
 import Image from 'next/image';
+import Authentication from '../../login/authentication';
 
 const Header = () => (
   <header>
+    <div>
+      <Authentication />
+    </div>
     <div className='logo'>
       <Image src='/images/logo.svg' alt='Logo' width={200} height={200}></Image>
     </div>
@@ -26,16 +30,6 @@ const Header = () => (
         <li>
           <Link href='/companyagreement'>
             <a>Firmaavtale</a>
-          </Link>
-        </li>
-        <li>
-          <Link href='#'>
-            <a>Sign In</a>
-          </Link>
-        </li>
-        <li>
-          <Link href='#'>
-            <a>Sign Out</a>
           </Link>
         </li>
       </ul>
