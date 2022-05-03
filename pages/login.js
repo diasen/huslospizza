@@ -1,8 +1,9 @@
 import Head from 'next/head';
 import axios from 'axios';
-import Authentication from '../components/login/login';
+import { BASE_URL } from '../config/config';
+import Authentication from '../components/login/authentication';
 
-axios.get('http://localhost:1337/api/restaurants').then((response) => {
+axios.get(BASE_URL).then((response) => {
   console.log(response.data.data);
 });
 
