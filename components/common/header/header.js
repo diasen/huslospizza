@@ -29,8 +29,13 @@ const Header = () => (
           </Link>
         </li>
         <li>
-          <Link href='/login'>
-            <a>Log in</a>
+          <Link href='#'>
+            <a>Sign In</a>
+          </Link>
+        </li>
+        <li>
+          <Link href='#'>
+            <a>Sign Out</a>
           </Link>
         </li>
       </ul>
