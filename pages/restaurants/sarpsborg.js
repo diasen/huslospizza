@@ -25,7 +25,7 @@ export default function Sarpsborg() {
           </p>
           <p className='locationSpesificText'> 900 00 002</p>
           <div className='menuBtnContainer'>
-            <Link href='/restaurants/manstad/menu'>
+            <Link href='/restaurants/menusarpsborg'>
               <a className='menuBtn'>Se vår meny</a>
             </Link>
           </div>

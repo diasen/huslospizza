@@ -23,7 +23,7 @@ export default function Vikane() {
           </p>
           <p className='locationSpesificText'> 900 00 001</p>
           <div className='menuBtnContainer'>
-            <Link href='/restaurants/manstad/menu'>
+            <Link href='/restaurants/menuvikane'>
               <a className='menuBtn'>Se vår meny</a>
             </Link>
           </div>
