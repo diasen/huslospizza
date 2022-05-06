@@ -1,30 +1,29 @@
-//Using React's useState and useEffect hooks
 import { useState, useEffect } from 'react';
 
-export default function Posts() {
-  const [pizzasarpsborgs, setPosts] = useState([]);
+export default function Menu() {
+  const [pizzasarpsborgs, setPizzas] = useState(['']);
 
-  async function fetchPosts() {
+  async function fetchPizza() {
     const res = await fetch('http://localhost:1337/api/pizzasarpsborgs');
     const data = await res.json();
-    setPosts(data.data);
-    const newarray = data.data;
-    console.log(newarray);
+    setPizzas(data.data[1].attributes);
 
-    const reformattedArray = newarray.map(({ id, attributes }) => ({
-      [id]: attributes,
-    }));
-    console.log(reformattedArray);
+    const newpizzaArray = data.data[1].attributes;
+    console.log(newpizzaArray);
+    console.log(newpizzaArray.title);
+    console.log(newpizzaArray.price);
   }
 
   useEffect(() => {
-    fetchPosts();
+    fetchPizza();
   }, []);
 
   return (
     <div>
-      {pizzasarpsborgs.map((post) => (
-        <p key={post.id}>{post.id}</p>
+      {pizzasarpsborgs.map((pizza) => (
+        <div key={pizza.id}>
+          <h4>{pizza.title}</h4>
+        </div>
       ))}
     </div>
   );

@@ -1,31 +1,21 @@
-// posts will be populated at build time by getStaticProps()
-function Blog({ posts }) {
-  console.log(posts);
+function Profile() {
+  const [data, setData] = useState(null);
+
+  useEffect(() => {
+    setLoading(true);
+    fetch('http://localhost:1337/api/pizzasarpsborgs')
+      .then((res) => res.json())
+      .then((data) => {
+        setData(data);
+      });
+  }, []);
+
+  if (!data) return <p>No profile data</p>;
+
   return (
-    <ul>
-      {posts.map((post) => (
-        <li key={post.id}>{post.title}</li>
-      ))}
-    </ul>
+    <div>
+      <h1>{data.name}</h1>
+      <p>{data.bio}</p>
+    </div>
   );
 }
-
-// This function gets called at build time on server-side.
-// It won't be called on client-side, so you can even do
-// direct database queries.
-export async function getStaticProps() {
-  // Call an external API endpoint to get posts.
-  // You can use any data fetching library
-  const res = await fetch('https://jsonplaceholder.typicode.com/posts');
-  const posts = await res.json();
-
-  // By returning { props: { posts } }, the Blog component
-  // will receive `posts` as a prop at build time
-  return {
-    props: {
-      posts,
-    },
-  };
-}
-
-export default Blog;

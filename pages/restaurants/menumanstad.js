@@ -1,26 +1,30 @@
-import Link from 'next/link';
-
-//getStaticProps
-export const getStaticProps = async () => {
-  const API_URL = 'https://jsonplaceholder.typicode.com/posts';
-  const request = await fetch(API_URL);
-  const posts = await request.json();
-  return { props: { posts } };
-};
-
-//route
-export default function Home({ posts }) {
+// posts will be populated at build time by getStaticProps()
+function Blog({ menu }) {
   return (
-    <div>
-      <main>
-        {posts.map((post) => (
-          <Link key={post.id} href={`posts/${post.id}`}>
-            <a>
-              <h3>{post.title}</h3>
-            </a>
-          </Link>
-        ))}
-      </main>
-    </div>
+    <ul>
+      {menu.map((pizza, { attributes: { title } }) => (
+        <li>{pizza.title}</li>
+      ))}
+    </ul>
   );
 }
+
+// This function gets called at build time on server-side.
+// It won't be called on client-side, so you can even do
+// direct database queries.
+export async function getStaticProps() {
+  // Call an external API endpoint to get posts.
+  // You can use any data fetching library
+  const res = await fetch('http://localhost:1337/api/pizzasarpsborgs');
+  const menu = await res.json();
+
+  // By returning { props: { posts } }, the Blog component
+  // will receive `posts` as a prop at build time
+  return {
+    props: {
+      menu,
+    },
+  };
+}
+
+export default Blog;
