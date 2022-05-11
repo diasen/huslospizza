@@ -5,16 +5,20 @@ export default function Authentication() {
 
   if (session) {
     return (
-      <>
+      <div className='loginContainer'>
         Signed in as {session.user.email} <br />
-        <button onClick={() => signOut()}>Sign out</button>
-      </>
+        <button className='loginBtn' onClick={() => signOut()}>
+          Sign out
+        </button>
+      </div>
     );
   }
   return (
-    <>
+    <div className='loginContainer'>
       Not signed in <br />
-      <button onClick={() => signIn()}>Sign in</button>
-    </>
+      <button className='loginBtn' onClick={() => signIn()}>
+        Sign in
+      </button>
+    </div>
   );
 }

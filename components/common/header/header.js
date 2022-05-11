@@ -8,7 +8,7 @@ const Header = () => (
       <Authentication />
     </div>
     <div className='logo'>
-      <Image src='/images/logo.svg' alt='Logo' width={200} height={200}></Image>
+      <Image src='/images/logo.svg' alt='Logo' width={300} height={200}></Image>
     </div>
     <div className='navigation'>
       <ul>

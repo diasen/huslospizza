@@ -7,10 +7,14 @@
 }
 
 .agreementTextContainer {
-  width: 80%;
-  text-align: center;
-  margin: 50px auto;
-  color: $text-color;
+  width: 70%;
+  margin: auto;
+
+  h3 {
+    text-align: center;
+    margin: 50px auto;
+    color: $text-color;
+  }
 }
 
 .formContainer {

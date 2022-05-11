@@ -54,6 +54,15 @@ a {
   font-family: "Merriweather", serif;
 }
 
+.loginContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
 .footerLogo {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -381,7 +390,11 @@ a {
 }
 
 .agreementTextContainer {
-  width: 80%;
+  width: 70%;
+  margin: auto;
+}
+
+.agreementTextContainer h3 {
   text-align: center;
   margin: 50px auto;
   color: #272f1f;
