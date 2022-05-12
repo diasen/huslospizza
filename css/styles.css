@@ -419,78 +419,16 @@ a {
   color: #fefefe;
 }
 
-.sarpsborgHeading {
-  text-align: center;
-  margin: 50px 0 0 0;
-  font-size: 3rem;
+.locationSpesificHeader {
   color: #272f1f;
-  font-weight: lighter;
 }
 
-.sarpsborgSubheading {
-  text-align: center;
-  font-size: 1rem;
+.locationSpesificText {
   color: #272f1f;
-  font-weight: lighter;
 }
 
-.sarpsborgContent {
-  border: 1px solid red;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  width: 70%;
-  margin: 100px auto;
-}
-
-.maps {
-  width: 30%;
-  height: 350px;
-  border: 1px solid green;
-}
-
-.story {
-  width: 30%;
-  height: 350px;
-  border: 1px solid blue;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-}
-
-.story p {
-  width: 80%;
-}
-
-.menuSarpsborgBtn {
-  border: 2px solid #272f1f;
+.restaurantText {
   color: #272f1f;
-  border-radius: 10px;
-  height: 50px;
-  width: 200px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  text-align: center;
-  font-size: 1.2rem;
 }
 
 .returnBtnContainer {
@@ -588,7 +526,6 @@ a {
 }
 
 .cardContainer {
-  border: 1px solid pink;
   width: 80%;
   margin: 50px auto;
   display: -webkit-box;
@@ -601,7 +538,6 @@ a {
 }
 
 .card {
-  border: 1px solid blue;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -610,16 +546,27 @@ a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  grid-gap: 20px;
+  grid-gap: 70px;
 }
 
 .card h1 {
   width: 100%;
   text-align: center;
+  color: #272f1f;
+  font-family: "Merriweather", serif;
+  margin-bottom: 0;
+}
+
+.card h2 {
+  width: 100%;
+  text-align: center;
+  color: #272f1f;
+  font-family: "Merriweather", serif;
+  margin: 0;
+  font-weight: lighter;
 }
 
 .menuCard {
-  border: 1px solid green;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -627,13 +574,18 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin: 15px 0;
-  padding: 20px;
-  width: 450px;
+  width: 500px;
+}
+
+.menuCard p {
+  margin: 5px 0 5px 0;
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: normal;
+  color: #272f1f;
 }
 
 .menuCard .menuCardChild {
-  border: 1px solid red;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -642,9 +594,15 @@ a {
           justify-content: space-between;
 }
 
+.menuCard .menuCardChild h3 {
+  font-family: "Merriweather", serif;
+  font-size: 1.3rem;
+  color: #272f1f;
+}
+
 .allergies {
   text-align: center;
-  margin-bottom: 50px;
-  font-size: 1.3rem;
+  margin: 100px 0;
+  font-size: 1.1rem;
 }
 /*# sourceMappingURL=styles.css.map */

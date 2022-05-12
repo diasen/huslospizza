@@ -1,12 +1,11 @@
 import { useState, useEffect } from 'react';
-import { BASE_URL } from '../../config/config';
 
 export default function Menu() {
-  const [pizzasarpsborgs, setPizzas] = useState([]);
+  const [pizzavikanes, setPizzas] = useState([]);
 
   async function fetchPizza() {
     const res = await fetch(
-      'http://localhost:1337/api/restaurants/1?populate=*'
+      'http://localhost:1337/api/restaurants/3?populate=*'
     );
     const data = await res.json();
     setPizzas(data.data);
@@ -16,18 +15,19 @@ export default function Menu() {
     fetchPizza();
   }, []);
 
-  if (pizzasarpsborgs.length === 0) {
+  if (pizzavikanes.length === 0) {
     return <p> loading </p>;
   }
 
-  console.log(pizzasarpsborgs);
-  let { id, attributes } = pizzasarpsborgs;
+  console.log(pizzavikanes);
+  let { id, attributes } = pizzavikanes;
 
   console.log('pizza', attributes);
   return (
     <div className='card'>
       <h1>{attributes.name}</h1>
-      {attributes.menu_sarpsborgs.data.map((elm) => {
+      <h2>Bestill på {attributes.phone}</h2>
+      {attributes.menu_vikanes.data.map((elm) => {
         return (
           <div key={elm.id} className='menuCard'>
             <div className='menuCardChild'>

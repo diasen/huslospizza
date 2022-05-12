@@ -1,5 +1,4 @@
 .cardContainer {
-  border: 1px solid pink;
   width: 80%;
   margin: 50px auto;
   display: flex;
@@ -7,35 +6,56 @@
 }
 
 .card {
-  border: 1px solid blue;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  grid-gap: 20px;
+  grid-gap: 70px;
 
   h1 {
     width: 100%;
     text-align: center;
+    color: $text-color;
+    font-family: $heading-font;
+    margin-bottom: 0;
+  }
+
+  h2 {
+    width: 100%;
+    text-align: center;
+    color: $text-color;
+    font-family: $heading-font;
+    margin: 0;
+    font-weight: lighter;
   }
 }
 
 .menuCard {
-  border: 1px solid green;
   display: flex;
   flex-direction: column;
-  margin: 15px 0;
-  padding: 20px;
-  width: 450px;
+  width: 500px;
+
+  p {
+    margin: 5px 0 5px 0;
+    font-size: 1rem;
+    font-family: $text-font;
+    font-weight: normal;
+    color: $text-color;
+  }
 
   .menuCardChild {
-    border: 1px solid red;
     display: flex;
     justify-content: space-between;
+
+    h3 {
+      font-family: $heading-font;
+      font-size: 1.3rem;
+      color: $text-color;
+    }
   }
 }
 
 .allergies {
   text-align: center;
-  margin-bottom: 50px;
-  font-size: 1.3rem;
+  margin: 100px 0;
+  font-size: 1.1rem;
 }
