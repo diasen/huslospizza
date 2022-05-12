@@ -1,0 +1,41 @@
+.cardContainer {
+  border: 1px solid pink;
+  width: 80%;
+  margin: 50px auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.card {
+  border: 1px solid blue;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  grid-gap: 20px;
+
+  h1 {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.menuCard {
+  border: 1px solid green;
+  display: flex;
+  flex-direction: column;
+  margin: 15px 0;
+  padding: 20px;
+  width: 450px;
+
+  .menuCardChild {
+    border: 1px solid red;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.allergies {
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 1.3rem;
+}
