@@ -21,7 +21,7 @@ export default function Menu() {
               console.log('pizzaID');
               return (
                 <div key={id}>
-                  <p>{title}</p>
+                  <h2>{title}</h2>
                   <p>{price}</p>
                   <p>{allergies}</p>
                   <p>{description}</p>
