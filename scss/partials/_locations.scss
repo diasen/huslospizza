@@ -5,12 +5,15 @@
   font-size: 3rem;
   color: $text-color;
   font-weight: lighter;
+  font-family: $heading-font;
 }
 
 .locationsSubheading {
   text-align: center;
   font-size: 1rem;
   color: $text-color;
+  font-family: $text-font;
+  font-weight: 600;
   font-weight: lighter;
 }
 

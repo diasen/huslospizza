@@ -22,7 +22,7 @@ export default function Sarpsborg() {
               St. Marie gate, 1706 Sarpsborg
             </a>
           </p>
-          <p className='locationSpesificText'> 900 00 002</p>
+          <p className='locationSpesificText'>tlf 900 00 002</p>
           <div className='menuBtnContainer'>
             <Link href='/restaurants/menusarpsborg'>
               <a className='menuBtn'>Se vår meny</a>

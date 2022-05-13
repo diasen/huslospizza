@@ -300,12 +300,15 @@ a {
   font-size: 3rem;
   color: #272f1f;
   font-weight: lighter;
+  font-family: "Merriweather", serif;
 }
 
 .locationsSubheading {
   text-align: center;
   font-size: 1rem;
   color: #272f1f;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
   font-weight: lighter;
 }
 
@@ -387,6 +390,7 @@ a {
   text-align: center;
   font-weight: lighter;
   margin: 100px 0 20px 0;
+  font-family: "Merriweather", serif;
 }
 
 .agreementTextContainer {
@@ -396,8 +400,11 @@ a {
 
 .agreementTextContainer h3 {
   text-align: center;
-  margin: 50px auto;
   color: #272f1f;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-size: 1rem;
+  margin-bottom: 0px;
 }
 
 .formContainer {
@@ -419,34 +426,10 @@ a {
   color: #fefefe;
 }
 
-.locationSpesificHeader {
-  color: #272f1f;
-}
-
-.locationSpesificText {
-  color: #272f1f;
-}
-
+.locationSpesificHeader,
+.locationSpesificText,
 .restaurantText {
   color: #272f1f;
-}
-
-.returnBtnContainer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  width: 90%;
-  margin: 50px auto;
-}
-
-.returnBtn {
-  border: none;
-  color: #606d51;
-  background-color: #fcfaea;
-  cursor: pointer;
 }
 
 .locationSpesificHeader {
@@ -536,6 +519,9 @@ a {
 .hours h3 {
   text-align: center;
   margin: 50px 0 30px 0;
+  font-weight: lighter;
+  font-family: "Merriweather", serif;
+  font-size: 1rem;
 }
 
 .hoursCard {

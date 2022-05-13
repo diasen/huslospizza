@@ -1,5 +1,12 @@
 import Link from 'next/link';
-import { Card, Image, Text, Group, useMantineTheme } from '@mantine/core';
+import {
+  Card,
+  Image,
+  Text,
+  Group,
+  useMantineTheme,
+  MantineProvider,
+} from '@mantine/core';
 
 function Locationsselection() {
   const theme = useMantineTheme();
@@ -44,7 +51,6 @@ function Locationsselection() {
             <Card.Section>
               <Image src='./images/vikane.jpg' height={200} alt='store front' />
             </Card.Section>
-
             <Group
               position='apart'
               style={{ marginBottom: 5, marginTop: theme.spacing.sm }}
@@ -53,7 +59,6 @@ function Locationsselection() {
                 Vikane
               </Text>
             </Group>
-
             <Text size='md' style={{ color: secondaryColor, lineHeight: 1.5 }}>
               Vikaneveien 325, 1621 Gressvik
             </Text>

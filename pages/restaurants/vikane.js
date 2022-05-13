@@ -20,7 +20,7 @@ export default function Vikane() {
               Vikaneveien 325, 1621 Gressvik
             </a>
           </p>
-          <p className='locationSpesificText'> 900 00 001</p>
+          <p className='locationSpesificText'>tlf 900 00 001</p>
           <div className='menuBtnContainer'>
             <Link href='/restaurants/menuvikane'>
               <a className='menuBtn'>Se vår meny</a>
