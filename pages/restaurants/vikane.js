@@ -1,7 +1,7 @@
 import Head from 'next/head';
-import Return from '../../components/return/Return';
 import Image from 'next/image';
 import Link from 'next/link';
+import Hours from '../api/hoursVikane';
 
 export default function Vikane() {
   return (
@@ -13,7 +13,6 @@ export default function Vikane() {
       </Head>
 
       <main>
-        <Return />
         <div>
           <h1 className='locationSpesificHeader'>Husløs Pizza avd. Vikane</h1>
           <p className='locationSpesificText'>
@@ -26,6 +25,10 @@ export default function Vikane() {
             <Link href='/restaurants/menuvikane'>
               <a className='menuBtn'>Se vår meny</a>
             </Link>
+          </div>
+          <div className='hours'>
+            <h3>Åpningstider</h3>
+            <Hours />
           </div>
         </div>
         <div>

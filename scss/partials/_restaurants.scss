@@ -1,9 +1,12 @@
 .locationSpesificHeader {
   text-align: center;
+  margin-top: 60px;
+  font-family: $heading-font;
 }
 
 .locationSpesificText {
   text-align: center;
+  font-family: $text-font;
 }
 
 .restaurantContent {
@@ -48,5 +51,33 @@
     background-color: $secondary-color;
     color: $white;
     border: none;
+  }
+}
+
+.hours {
+  width: 80%;
+  margin: 0 auto 70px;
+
+  h3 {
+    text-align: center;
+    margin: 50px 0 30px 0;
+  }
+}
+
+.hoursCard {
+  display: flex;
+  width: 100%;
+}
+
+.hoursCardChild {
+  min-width: 120px;
+  text-align: center;
+
+  h6 {
+    color: $text-color;
+    font-family: $text-font;
+    font-size: 0.9rem;
+    font-weight: 400;
+    margin: 0;
   }
 }

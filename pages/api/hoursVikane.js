@@ -5,7 +5,7 @@ export default function Hours() {
 
   async function fetchHours() {
     const res = await fetch(
-      'http://localhost:1337/api/restaurants/2?populate=*'
+      'http://localhost:1337/api/restaurants/3?populate=*'
     );
     const data = await res.json();
     setHours(data.data);
@@ -25,7 +25,7 @@ export default function Hours() {
   console.log('hours', attributes);
   return (
     <div className='hoursCard'>
-      {attributes.hours_manstads.data.map((elm) => {
+      {attributes.hours_vikanes.data.map((elm) => {
         return (
           <div key={elm.id} className='menuCard'>
             <div className='hoursCardChild'>

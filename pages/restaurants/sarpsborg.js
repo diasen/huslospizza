@@ -1,7 +1,7 @@
 import Head from 'next/head';
-import Return from '../../components/return/Return';
 import Image from 'next/image';
 import Link from 'next/link';
+import Hours from '../api/hoursSarpsborg';
 
 export default function Sarpsborg() {
   return (
@@ -13,7 +13,6 @@ export default function Sarpsborg() {
       </Head>
 
       <main>
-        <Return />
         <div>
           <h1 className='locationSpesificHeader'>
             Husløs Pizza avd. Sarpsborg
@@ -29,6 +28,10 @@ export default function Sarpsborg() {
               <a className='menuBtn'>Se vår meny</a>
             </Link>
           </div>
+          <div className='hours'>
+            <h3>Åpningstider</h3>
+            <Hours />
+          </div>
         </div>
         <div>
           <div className='restaurantContent'>
@@ -37,8 +40,8 @@ export default function Sarpsborg() {
                 src='/images/manstad.jpg'
                 alt='store front'
                 layout='responsive'
-                height={120}
-                width={150}
+                height={160}
+                width={250}
               />
             </div>
             <div className='restaurantText'>

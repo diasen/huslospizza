@@ -2,7 +2,7 @@ import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
 
-import Return from '../../components/return/Return';
+import Hours from '../api/hoursManstad';
 
 export default function Manstad() {
   return (
@@ -14,7 +14,6 @@ export default function Manstad() {
       </Head>
 
       <main>
-        <Return />
         <div>
           <h1 className='locationSpesificHeader'>Husløs Pizza avd. Manstad</h1>
           <p className='locationSpesificText'>
@@ -27,6 +26,10 @@ export default function Manstad() {
             <Link href='/restaurants/menumanstad'>
               <a className='menuBtn'>Se vår meny</a>
             </Link>
+          </div>
+          <div className='hours'>
+            <h3>Åpningstider</h3>
+            <Hours />
           </div>
         </div>
         <div>
