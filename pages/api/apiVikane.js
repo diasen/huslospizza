@@ -1,12 +1,11 @@
 import { useState, useEffect } from 'react';
+import { BASE_URL } from '../../config/config';
 
 export default function Menu() {
   const [pizzavikanes, setPizzas] = useState([]);
 
   async function fetchPizza() {
-    const res = await fetch(
-      'http://localhost:1337/api/restaurants/3?populate=*'
-    );
+    const res = await fetch(BASE_URL + 'api/restaurants/3?populate=*');
     const data = await res.json();
     setPizzas(data.data);
   }

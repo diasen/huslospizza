@@ -60,7 +60,7 @@ a {
   display: flex;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
-          justify-content: end;
+          justify-content: flex-end;
 }
 
 .footerLogo {
@@ -309,7 +309,7 @@ a {
   color: #272f1f;
   font-family: "Poppins", sans-serif;
   font-weight: 600;
-  font-weight: lighter;
+  font-weight: normal;
 }
 
 .cardsContainer {
