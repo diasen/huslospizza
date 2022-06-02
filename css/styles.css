@@ -1,5 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap");
 html,
 body {
   background-color: #fcfaea;
@@ -15,6 +15,19 @@ a {
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Raleway", sans-serif;
+}
+
+p {
+  font-family: "Lato", sans-serif;
 }
 
 .logo {
@@ -51,7 +64,7 @@ a {
 
 .navigation a {
   color: #fefefe;
-  font-family: "Merriweather", serif;
+  font-family: "Raleway", sans-serif;
 }
 
 .loginContainer {
@@ -61,6 +74,39 @@ a {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  width: 98%;
+  margin: auto;
+  padding: 10px 0 0 0;
+}
+
+.loginBtn {
+  width: 100px;
+  height: 30px;
+  color: #272f1f;
+  font-family: "Raleway", sans-serif;
+  background-color: transparent;
+  border-radius: 5px;
+  border: none;
+  padding: 0;
+  text-align: right;
+  margin-right: 3px;
+}
+
+.loginIcon {
+  color: #272f1f !important;
+  font-size: 20px;
+}
+
+.iconContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .footerLogo {
@@ -118,25 +164,27 @@ a {
 
 .heroHeading {
   color: #272f1f;
-  font-size: 7rem;
+  font-size: 6rem;
   text-align: center;
-  font-weight: lighter;
+  font-weight: 300;
   margin: 100px 0 20px 0;
 }
 
 .heroSubheading {
   color: #272f1f;
-  font-size: 2rem;
+  font-size: 1.8rem;
+  font-family: "Lato", sans-serif;
   text-align: center;
-  font-weight: lighter;
+  font-weight: 300;
 }
 
 .heroBtn {
   border: 2px solid #272f1f;
   color: #272f1f;
+  font-family: "Raleway", sans-serif;
   border-radius: 10px;
   height: 80px;
-  width: 400px;
+  width: 330px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -148,7 +196,17 @@ a {
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
-  font-size: 2rem;
+  font-size: 1.6rem;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.heroBtn:hover {
+  background-color: #606d51;
+  color: #fefefe;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  border: none;
 }
 
 .heroBtnContainer {
@@ -186,11 +244,12 @@ a {
 
 .pizzaText h3 {
   font-size: 2.5rem;
-  font-weight: lighter;
+  font-weight: bold;
 }
 
 .pizzaText p {
   font-size: 1.5rem;
+  font-weight: 300;
 }
 
 .pizzaImage {
@@ -199,14 +258,24 @@ a {
 
 .ingredientsContainer {
   min-height: 450px;
+  width: 70%;
+  margin: 50px auto 100px auto;
+  padding: 50px;
 }
 
 .ingredientsHeading {
   text-align: center;
-  margin: 100px 0;
+  margin: 50px 0;
   font-size: 3rem;
+  font-weight: 300;
   color: #272f1f;
-  font-weight: lighter;
+}
+
+.ingredientText {
+  color: #272f1f;
+  font-size: 1.3rem;
+  font-weight: 300;
+  margin: 0;
 }
 
 .ingredientBtnContainer {
@@ -216,15 +285,16 @@ a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 100px 0;
+  margin: 50px 0;
 }
 
 .ingredientBtn {
   border: 2px solid #272f1f;
   color: #272f1f;
+  font-family: "Raleway", sans-serif;
   border-radius: 10px;
-  height: 80px;
-  width: 400px;
+  height: 70px;
+  width: 330px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -236,7 +306,18 @@ a {
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
-  font-size: 2rem;
+  font-size: 1.6rem;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  margin: 0 !important;
+}
+
+.ingredientBtn:hover {
+  background-color: #606d51;
+  color: #fefefe;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  border: none;
 }
 
 .pizzadoughContainer {
@@ -264,11 +345,12 @@ a {
 
 .pizzadoughText h3 {
   font-size: 2.5rem;
-  font-weight: lighter;
+  font-weight: bold;
 }
 
 .pizzadoughText p {
   font-size: 1.5rem;
+  font-weight: 300;
 }
 
 .pizzadoughImage {
@@ -279,8 +361,8 @@ a {
   text-align: center;
   margin: 100px 0 0 0;
   font-size: 3rem;
+  font-weight: 300;
   color: #272f1f;
-  font-weight: lighter;
 }
 
 .MissingTextContainer {
@@ -289,9 +371,10 @@ a {
   padding: 50px;
 }
 
-.MissingText {
+.MissingTextContainer .MissingText {
   color: #272f1f;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
+  font-weight: 300;
 }
 
 .locationsHeading {
@@ -299,17 +382,16 @@ a {
   margin: 100px 0 0 0;
   font-size: 3rem;
   color: #272f1f;
-  font-weight: lighter;
-  font-family: "Merriweather", serif;
+  font-weight: 300;
+  font-family: "Raleway", sans-serif;
 }
 
 .locationsSubheading {
   text-align: center;
-  font-size: 1rem;
+  font-size: 1.125rem;
   color: #272f1f;
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
-  font-weight: normal;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
 }
 
 .cardsContainer {
@@ -357,11 +439,20 @@ a {
           transform: scale(2.15);
 }
 
+.cardHeading {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+}
+
+.cardText {
+  font-family: "Lato", sans-serif;
+}
+
 .aboutHeading {
   color: #272f1f;
   font-size: 3rem;
   text-align: center;
-  font-weight: lighter;
+  font-weight: 300;
   margin: 100px 0 20px 0;
 }
 
@@ -371,26 +462,32 @@ a {
   color: #272f1f;
 }
 
+.aboutTextContainer p {
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
 .aboutImageContainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   margin-bottom: 100px;
 }
 
 .aboutImage {
-  width: 40%;
+  width: 35%;
 }
 
 .agreementHeading {
   color: #272f1f;
   font-size: 3rem;
   text-align: center;
-  font-weight: lighter;
+  font-weight: 300;
   margin: 100px 0 20px 0;
-  font-family: "Merriweather", serif;
+  font-family: "Raleway", sans-serif;
 }
 
 .agreementTextContainer {
@@ -401,9 +498,9 @@ a {
 .agreementTextContainer h3 {
   text-align: center;
   color: #272f1f;
-  font-family: "Poppins", sans-serif;
+  font-family: "Lato", sans-serif;
   font-weight: 300;
-  font-size: 1rem;
+  font-size: 1.125rem;
   margin-bottom: 0px;
 }
 
@@ -415,15 +512,25 @@ a {
 .submitbtn {
   margin: 30px 0;
   width: 140px;
-  height: 35px;
+  height: 40px;
+  font-family: "Lato", sans-serif;
   background-color: #fcfaea;
   border: 2px solid #606d51;
   color: #606d51;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .submitbtn:hover {
   background-color: #606d51;
   color: #fefefe;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  border: none;
+}
+
+.formText {
+  font-family: "Lato", sans-serif;
 }
 
 .locationSpesificHeader,
@@ -435,12 +542,14 @@ a {
 .locationSpesificHeader {
   text-align: center;
   margin-top: 60px;
-  font-family: "Merriweather", serif;
+  font-family: "Raleway", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 300;
 }
 
 .locationSpesificText {
   text-align: center;
-  font-family: "Poppins", sans-serif;
+  font-family: "Lato", sans-serif;
 }
 
 .restaurantContent {
@@ -502,13 +611,18 @@ a {
           justify-content: center;
   text-align: center;
   font-size: 1.2rem;
-  font-weight: bold;
+  font-weight: normal;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  font-family: "Raleway", sans-serif;
 }
 
 .menuBtn:hover {
   background-color: #606d51;
   color: #fefefe;
   border: none;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .hours {
@@ -519,8 +633,8 @@ a {
 .hours h3 {
   text-align: center;
   margin: 50px 0 30px 0;
-  font-weight: lighter;
-  font-family: "Merriweather", serif;
+  font-weight: normal;
+  font-family: "Raleway", sans-serif;
   font-size: 1rem;
 }
 
@@ -538,7 +652,7 @@ a {
 
 .hoursCardChild h6 {
   color: #272f1f;
-  font-family: "Poppins", sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 0.9rem;
   font-weight: 400;
   margin: 0;
@@ -572,17 +686,19 @@ a {
   width: 100%;
   text-align: center;
   color: #272f1f;
-  font-family: "Merriweather", serif;
+  font-family: "Raleway", sans-serif;
   margin-bottom: 0;
+  font-size: 2.5rem;
+  font-weight: 300;
 }
 
 .card h2 {
   width: 100%;
   text-align: center;
   color: #272f1f;
-  font-family: "Merriweather", serif;
+  font-family: "Raleway", sans-serif;
   margin: 0;
-  font-weight: lighter;
+  font-weight: normal;
 }
 
 .menuCard {
@@ -599,7 +715,7 @@ a {
 .menuCard p {
   margin: 5px 0 5px 0;
   font-size: 1rem;
-  font-family: "Poppins", sans-serif;
+  font-family: "Lato", sans-serif;
   font-weight: normal;
   color: #272f1f;
 }
@@ -614,7 +730,7 @@ a {
 }
 
 .menuCard .menuCardChild h3 {
-  font-family: "Merriweather", serif;
+  font-family: "Raleway", sans-serif;
   font-size: 1.3rem;
   color: #272f1f;
 }
@@ -622,6 +738,7 @@ a {
 .allergies {
   text-align: center;
   margin: 100px 0;
-  font-size: 1.1rem;
+  font-size: 1.125rem;
+  font-weight: 300;
 }
 /*# sourceMappingURL=styles.css.map */

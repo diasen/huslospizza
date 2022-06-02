@@ -2,7 +2,7 @@
   color: $text-color;
   font-size: 3rem;
   text-align: center;
-  font-weight: lighter;
+  font-weight: 300;
   margin: 100px 0 20px 0;
 }
 
@@ -10,14 +10,19 @@
   width: 80%;
   margin: 100px auto;
   color: $text-color;
+
+  p {
+    font-size: 1.2rem;
+    font-weight: 300;
+  }
 }
 
 .aboutImageContainer {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   margin-bottom: 100px;
 }
 
 .aboutImage {
-  width: 40%;
+  width: 35%;
 }

@@ -9,7 +9,9 @@ function Herocontent() {
       </h3>
       <div className='heroBtnContainer'>
         <Link href='/locations'>
-          <a className='heroBtn'>Velg lokasjon</a>
+          <a className='heroBtn'>
+            <span>Velg lokasjon</span>
+          </a>
         </Link>
       </div>
     </div>

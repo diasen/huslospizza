@@ -27,4 +27,31 @@
 .loginContainer {
   display: flex;
   justify-content: flex-end;
+  width: 98%;
+  margin: auto;
+  padding: 10px 0 0 0;
+}
+
+.loginBtn {
+  width: 100px;
+  height: 30px;
+  color: $text-color;
+  font-family: $heading-font;
+  background-color: transparent;
+  border-radius: 5px;
+  border: none;
+  padding: 0;
+  text-align: right;
+  margin-right: 3px;
+}
+
+.loginIcon {
+  color: $text-color !important;
+  font-size: 20px;
+}
+
+.iconContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }

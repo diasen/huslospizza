@@ -46,6 +46,7 @@ function Agreementform() {
       <Box sx={{ maxWidth: 300 }} mx='auto'>
         <form onSubmit={form.onSubmit((values) => console.log(values))}>
           <Select
+            className='formText'
             required
             label='Lokasjon'
             placeholder='Velg lokasjon'
@@ -55,6 +56,7 @@ function Agreementform() {
           />
 
           <TextInput
+            className='formText'
             mt='md'
             required
             label='Oragnisasjonsnummer'
@@ -62,6 +64,7 @@ function Agreementform() {
             {...form.getInputProps('oragnisasjonsnummer')}
           />
           <TextInput
+            className='formText'
             mt='md'
             required
             label='Firmanavn'
@@ -69,6 +72,7 @@ function Agreementform() {
             {...form.getInputProps('firmanavn')}
           />
           <TextInput
+            className='formText'
             mt='md'
             required
             label='Fakturaadresse'
@@ -77,6 +81,7 @@ function Agreementform() {
           />
 
           <TextInput
+            className='formText'
             mt='md'
             required
             label='Fult navn'
@@ -84,6 +89,7 @@ function Agreementform() {
             {...form.getInputProps('fultnavn')}
           />
           <TextInput
+            className='formText'
             mt='md'
             required
             label='E-post'
@@ -91,6 +97,7 @@ function Agreementform() {
             {...form.getInputProps('email')}
           />
           <TextInput
+            className='formText'
             mt='md'
             required
             label='Telefon'
@@ -99,6 +106,7 @@ function Agreementform() {
           />
 
           <Checkbox
+            className='formText'
             required
             mt='xl'
             label='Jeg godkjenner at opplysningene ovenfor er korrekte'
@@ -114,8 +122,16 @@ function Agreementform() {
             value={value}
             onChange={setValue}
           >
-            <Radio value='Faktura på e-post' label='Faktura på e-post' />
-            <Radio value='EHF-faktura' label='EHF-faktura' />
+            <Radio
+              className='formText'
+              value='Faktura på e-post'
+              label='Faktura på e-post'
+            />
+            <Radio
+              className='formText'
+              value='EHF-faktura'
+              label='EHF-faktura'
+            />
           </RadioGroup>
 
           <Group position='center' mt='xl'>

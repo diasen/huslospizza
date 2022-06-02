@@ -17,6 +17,8 @@
     color: $text-color;
     font-family: $heading-font;
     margin-bottom: 0;
+    font-size: 2.5rem;
+    font-weight: 300;
   }
 
   h2 {
@@ -25,7 +27,7 @@
     color: $text-color;
     font-family: $heading-font;
     margin: 0;
-    font-weight: lighter;
+    font-weight: normal;
   }
 }
 
@@ -57,5 +59,6 @@
 .allergies {
   text-align: center;
   margin: 100px 0;
-  font-size: 1.1rem;
+  font-size: 1.125rem;
+  font-weight: 300;
 }

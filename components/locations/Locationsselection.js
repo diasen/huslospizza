@@ -15,7 +15,10 @@ function Locationsselection() {
 
   return (
     <div className='cardsContainer'>
-      <div style={{ width: 340, margin: 'auto' }} className='lacationCards'>
+      <div
+        style={{ width: 340, margin: 'auto', fontfamily: 'Lato, sans-serif' }}
+        className='lacationCards'
+      >
         <Link href='/restaurants/manstad' passHref>
           <Card shadow='sm' p='lg'>
             <Card.Section>
@@ -28,17 +31,34 @@ function Locationsselection() {
 
             <Group
               position='apart'
-              style={{ marginBottom: 5, marginTop: theme.spacing.sm }}
+              style={{
+                marginBottom: 5,
+                marginTop: theme.spacing.sm,
+              }}
             >
-              <Text weight={500} size='xl'>
+              <Text className='cardHeading' weight={500} size='xl'>
                 Manstad
               </Text>
             </Group>
 
-            <Text size='md' style={{ color: secondaryColor, lineHeight: 1.5 }}>
+            <Text
+              className='cardText'
+              size='md'
+              style={{
+                color: secondaryColor,
+                lineHeight: 1.5,
+              }}
+            >
               Lervikveien 28, 1626 Manstad
             </Text>
-            <Text size='md' style={{ color: secondaryColor, lineHeight: 1.5 }}>
+            <Text
+              className='cardText'
+              size='md'
+              style={{
+                color: secondaryColor,
+                lineHeight: 1.5,
+              }}
+            >
               Tlf: 900 00 000
             </Text>
           </Card>
@@ -55,14 +75,22 @@ function Locationsselection() {
               position='apart'
               style={{ marginBottom: 5, marginTop: theme.spacing.sm }}
             >
-              <Text weight={500} size='xl'>
+              <Text className='cardHeading' weight={500} size='xl'>
                 Vikane
               </Text>
             </Group>
-            <Text size='md' style={{ color: secondaryColor, lineHeight: 1.5 }}>
+            <Text
+              className='cardText'
+              size='md'
+              style={{ color: secondaryColor, lineHeight: 1.5 }}
+            >
               Vikaneveien 325, 1621 Gressvik
             </Text>
-            <Text size='md' style={{ color: secondaryColor, lineHeight: 1.5 }}>
+            <Text
+              className='cardText'
+              size='md'
+              style={{ color: secondaryColor, lineHeight: 1.5 }}
+            >
               Tlf: 900 00 001
             </Text>
           </Card>
@@ -84,15 +112,23 @@ function Locationsselection() {
               position='apart'
               style={{ marginBottom: 5, marginTop: theme.spacing.sm }}
             >
-              <Text weight={500} size='xl'>
+              <Text className='cardHeading' weight={500} size='xl'>
                 Sarpsborg
               </Text>
             </Group>
 
-            <Text size='md' style={{ color: secondaryColor, lineHeight: 1.5 }}>
+            <Text
+              className='cardText'
+              size='md'
+              style={{ color: secondaryColor, lineHeight: 1.5 }}
+            >
               St. Marie gate, 1706 Sarpsborg
             </Text>
-            <Text size='md' style={{ color: secondaryColor, lineHeight: 1.5 }}>
+            <Text
+              className='cardText'
+              size='md'
+              style={{ color: secondaryColor, lineHeight: 1.5 }}
+            >
               Tlf: 900 00 002
             </Text>
           </Card>

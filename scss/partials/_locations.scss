@@ -4,17 +4,16 @@
   margin: 100px 0 0 0;
   font-size: 3rem;
   color: $text-color;
-  font-weight: lighter;
+  font-weight: 300;
   font-family: $heading-font;
 }
 
 .locationsSubheading {
   text-align: center;
-  font-size: 1rem;
+  font-size: 1.125rem;
   color: $text-color;
   font-family: $text-font;
-  font-weight: 600;
-  font-weight: normal;
+  font-weight: 300;
 }
 
 // Card
@@ -54,4 +53,13 @@
   &:hover:before {
     transform: scale(2.15);
   }
+}
+
+.cardHeading {
+  font-family: $heading-font;
+  font-weight: 500;
+}
+
+.cardText {
+  font-family: $text-font;
 }

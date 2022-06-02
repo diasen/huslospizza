@@ -5,7 +5,7 @@ function Pizzacontent() {
     <div>
       <div className='pizzaContainer'>
         <div className='pizzaText'>
-          <h3>Pizzadeig laget på gamle italienske traidisjoner.</h3>
+          <h3>Pizza laget på gamle italienske traidisjoner.</h3>
           <p>
             Deigen er basert norske råvarer av beste kvalitet og får en hevetid
             på 72 timer, noe som gjør deigen helt spesiell og ekstremt luftig

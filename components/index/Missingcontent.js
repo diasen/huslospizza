@@ -1,7 +1,9 @@
 function Missingcontent() {
   return (
     <div>
-      <h2 className='MissingHeading'>Nyt av ferske norske ingredienser</h2>
+      <h3 className='MissingHeading'>
+        Vi er best på pizza gjennom mange års erfaring
+      </h3>
       <div className='MissingTextContainer'>
         <p className='MissingText'>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do

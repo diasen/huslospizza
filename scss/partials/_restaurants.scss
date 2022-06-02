@@ -2,6 +2,8 @@
   text-align: center;
   margin-top: 60px;
   font-family: $heading-font;
+  font-size: 2.5rem;
+  font-weight: 300;
 }
 
 .locationSpesificText {
@@ -45,12 +47,15 @@
   justify-content: center;
   text-align: center;
   font-size: 1.2rem;
-  font-weight: bold;
+  font-weight: normal;
+  transition: 0.5s;
+  font-family: $heading-font;
 
   &:hover {
     background-color: $secondary-color;
     color: $white;
     border: none;
+    transition: 0.5s;
   }
 }
 
@@ -61,7 +66,7 @@
   h3 {
     text-align: center;
     margin: 50px 0 30px 0;
-    font-weight: lighter;
+    font-weight: normal;
     font-family: $heading-font;
     font-size: 1rem;
   }
