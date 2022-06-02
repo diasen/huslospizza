@@ -1,12 +1,11 @@
 import { useState, useEffect } from 'react';
+import { BASE_URL } from '../../config/config';
 
 export default function Hours() {
   const [hoursmanstads, setHours] = useState([]);
 
   async function fetchHours() {
-    const res = await fetch(
-      'http://localhost:1337/api/restaurants/1?populate=*'
-    );
+    const res = await fetch(BASE_URL + 'api/restaurants/1?populate=*');
     const data = await res.json();
     setHours(data.data);
   }
