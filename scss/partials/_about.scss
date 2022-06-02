@@ -26,3 +26,28 @@
 .aboutImage {
   width: 35%;
 }
+
+@media (max-width: 1200px) {
+}
+
+@media (max-width: 991px) {
+  .aboutImage {
+    width: 45%;
+  }
+}
+
+@media (max-width: 767px) {
+  .aboutImageContainer {
+    flex-direction: column;
+    width: 80%;
+    margin: 0 auto 100px auto;
+  }
+
+  .aboutImage {
+    width: 100%;
+  }
+
+  .aboutImgSpesific {
+    display: none !important;
+  }
+}

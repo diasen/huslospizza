@@ -1,7 +1,8 @@
 // Hero container
 .heroContainer {
-  min-height: 550px;
+  min-height: 500px;
 }
+
 .heroHeading {
   color: $text-color;
   font-size: 6rem;
@@ -174,5 +175,99 @@
     color: $text-color;
     font-size: 1.3rem;
     font-weight: 300;
+  }
+}
+
+@media (max-width: 1200px) {
+  .heroContainer {
+    min-height: 500 !important;
+  }
+}
+
+@media (max-width: 991px) {
+}
+
+@media (max-width: 767px) {
+  .heroContainer {
+    min-height: 0;
+  }
+  .heroHeading {
+    color: $text-color;
+    font-size: 3rem;
+    text-align: center;
+    font-weight: 400;
+    margin: 100px 0 20px 0;
+  }
+
+  .pizzaContainer {
+    flex-direction: column;
+  }
+
+  .pizzaImage {
+    width: 100%;
+  }
+
+  .pizzaText {
+    width: 80%;
+
+    h3 {
+      font-size: 2rem;
+    }
+
+    p {
+      font-size: 1.2rem;
+    }
+  }
+
+  .ingredientsContainer {
+    min-height: 450px;
+    width: 80%;
+    margin: 50px auto;
+    padding: 10px;
+  }
+
+  .heroBtn,
+  .ingredientBtn {
+    height: 60px;
+    width: 250px;
+    font-size: 1.4rem;
+  }
+
+  .heroBtnContainer {
+    display: flex;
+    justify-content: center;
+    margin: 100px 0;
+  }
+
+  .pizzadoughContainer {
+    flex-direction: column;
+  }
+
+  .pizzadoughImage {
+    width: 100%;
+  }
+
+  .pizzadoughText {
+    width: 95%;
+
+    h3 {
+      font-size: 2rem;
+    }
+
+    p {
+      font-size: 1.2rem;
+    }
+  }
+
+  .MissingTextContainer {
+    width: 80%;
+    margin: 50px auto;
+    padding: 10px;
+
+    .MissingText {
+      color: $text-color;
+      font-size: 1.3rem;
+      font-weight: 300;
+    }
   }
 }

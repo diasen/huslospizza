@@ -31,7 +31,7 @@ function Aboutcontent() {
             layout='responsive'
           ></Image>
         </div>
-        <div className='aboutImage'>
+        <div className='aboutImage aboutImgSpesific'>
           <Image
             src='/images/aboutpizza.jpg'
             alt='Logo'

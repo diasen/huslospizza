@@ -159,7 +159,7 @@ p {
 }
 
 .heroContainer {
-  min-height: 550px;
+  min-height: 500px;
 }
 
 .heroHeading {
@@ -377,6 +377,92 @@ p {
   font-weight: 300;
 }
 
+@media (max-width: 1200px) {
+  .heroContainer {
+    min-height: 500 !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .heroContainer {
+    min-height: 0;
+  }
+  .heroHeading {
+    color: #272f1f;
+    font-size: 3rem;
+    text-align: center;
+    font-weight: 400;
+    margin: 100px 0 20px 0;
+  }
+  .pizzaContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .pizzaImage {
+    width: 100%;
+  }
+  .pizzaText {
+    width: 80%;
+  }
+  .pizzaText h3 {
+    font-size: 2rem;
+  }
+  .pizzaText p {
+    font-size: 1.2rem;
+  }
+  .ingredientsContainer {
+    min-height: 450px;
+    width: 80%;
+    margin: 50px auto;
+    padding: 10px;
+  }
+  .heroBtn,
+  .ingredientBtn {
+    height: 60px;
+    width: 250px;
+    font-size: 1.4rem;
+  }
+  .heroBtnContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 100px 0;
+  }
+  .pizzadoughContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .pizzadoughImage {
+    width: 100%;
+  }
+  .pizzadoughText {
+    width: 95%;
+  }
+  .pizzadoughText h3 {
+    font-size: 2rem;
+  }
+  .pizzadoughText p {
+    font-size: 1.2rem;
+  }
+  .MissingTextContainer {
+    width: 80%;
+    margin: 50px auto;
+    padding: 10px;
+  }
+  .MissingTextContainer .MissingText {
+    color: #272f1f;
+    font-size: 1.3rem;
+    font-weight: 300;
+  }
+}
+
 .locationsHeading {
   text-align: center;
   margin: 100px 0 0 0;
@@ -481,6 +567,29 @@ p {
   width: 35%;
 }
 
+@media (max-width: 991px) {
+  .aboutImage {
+    width: 45%;
+  }
+}
+
+@media (max-width: 767px) {
+  .aboutImageContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 80%;
+    margin: 0 auto 100px auto;
+  }
+  .aboutImage {
+    width: 100%;
+  }
+  .aboutImgSpesific {
+    display: none !important;
+  }
+}
+
 .agreementHeading {
   color: #272f1f;
   font-size: 3rem;
@@ -505,7 +614,6 @@ p {
 }
 
 .formContainer {
-  width: 500px;
   margin: 100px auto;
 }
 
