@@ -67,6 +67,10 @@ p {
   font-family: "Raleway", sans-serif;
 }
 
+.active {
+  border-bottom: 2px solid #fefefe;
+}
+
 .loginContainer {
   display: -webkit-box;
   display: -ms-flexbox;

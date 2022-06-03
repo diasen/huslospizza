@@ -24,6 +24,10 @@
   }
 }
 
+.active {
+  border-bottom: 2px solid $white;
+}
+
 .loginContainer {
   display: flex;
   justify-content: flex-end;
