@@ -101,3 +101,7 @@ Report template included in the repo.
 Login next auth:
 username: diasen
 Password: Jeghaterlangepassord69!
+
+Strapi API
+Email: husløspizza@gmail.com
+Passord: HusløsPizza1109!

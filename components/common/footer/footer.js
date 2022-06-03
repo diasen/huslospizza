@@ -1,18 +1,23 @@
 import Image from 'next/image';
 import { FaInstagramSquare, FaFacebookSquare } from 'react-icons/fa';
 import { IconContext } from 'react-icons';
+import Link from 'next/link';
 
 function Footer() {
   return (
     <div className='footer'>
       <div className='footerMain'>
         <div className='footerLogo'>
-          <Image
-            src='/images/logowhite.svg'
-            alt='logo footer'
-            width={120}
-            height={120}
-          ></Image>
+          <Link href='/'>
+            <a>
+              <Image
+                src='/images/logowhite.svg'
+                alt='logo footer'
+                width={150}
+                height={150}
+              ></Image>
+            </a>
+          </Link>
         </div>
         <div className='footerContent'>
           <div className='openingHours'>
@@ -32,7 +37,9 @@ function Footer() {
                 value={{ color: 'white', className: 'global-class-name' }}
               >
                 <div>
-                  <FaFacebookSquare />
+                  <a href='https://www.facebook.com/huslossarpsborg/'>
+                    <FaFacebookSquare />
+                  </a>
                 </div>
               </IconContext.Provider>
 
@@ -40,7 +47,9 @@ function Footer() {
                 value={{ color: 'white', className: 'global-class-name' }}
               >
                 <div className='someInstagram'>
-                  <FaInstagramSquare />
+                  <a href='https://www.instagram.com/huslospizza/'>
+                    <FaInstagramSquare />
+                  </a>
                 </div>
               </IconContext.Provider>
             </div>

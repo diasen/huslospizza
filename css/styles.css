@@ -382,8 +382,35 @@ p {
 }
 
 @media (max-width: 1200px) {
+  .heroHeading {
+    font-size: 5rem;
+  }
   .heroContainer {
     min-height: 500 !important;
+  }
+  .heroBtnContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 100px 100px;
+  }
+}
+
+@media (max-width: 991px) {
+  .heroHeading {
+    font-size: 4rem;
+  }
+  .heroContainer {
+    min-height: 400px;
+  }
+  .heroBtn,
+  .ingredientBtn {
+    height: 70px;
+    width: 280px;
+    font-size: 1.4rem;
   }
 }
 
@@ -392,11 +419,7 @@ p {
     min-height: 0;
   }
   .heroHeading {
-    color: #272f1f;
     font-size: 3rem;
-    text-align: center;
-    font-weight: 400;
-    margin: 100px 0 20px 0;
   }
   .pizzaContainer {
     -webkit-box-orient: vertical;
@@ -428,15 +451,6 @@ p {
     width: 250px;
     font-size: 1.4rem;
   }
-  .heroBtnContainer {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    margin: 100px 0;
-  }
   .pizzadoughContainer {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -461,7 +475,6 @@ p {
     padding: 10px;
   }
   .MissingTextContainer .MissingText {
-    color: #272f1f;
     font-size: 1.3rem;
     font-weight: 300;
   }

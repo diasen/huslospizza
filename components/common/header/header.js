@@ -20,12 +20,16 @@ const Header = () => {
         <Authentication />
       </div>
       <div className='logo'>
-        <Image
-          src='/images/logo.svg'
-          alt='Logo'
-          width={300}
-          height={200}
-        ></Image>
+        <Link href='/'>
+          <a>
+            <Image
+              src='/images/logo.svg'
+              alt='Logo'
+              width={300}
+              height={200}
+            ></Image>
+          </a>
+        </Link>
       </div>
       <div className='navigation'>
         <ul>
