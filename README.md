@@ -21,10 +21,6 @@ Whatever project you choose, the final submission must have the following:
 
 Make a website or application for a real world client. The project should offer a significant enough scope to be able to show off your skills as a developer, and hopefully the project can form a central part of your portfolio for when you start applying for jobs.
 
-The process followed for the project will differ depending on the client and the requirements of their project.
-
-Note: The project has to have a big enough scope to show off the skills learned over your studies. An example of the level we’re expecting would be a website where administrators can add, update, remove products, and users can search, filter, and contact administrators. If you are unsure if your potential client’s brief is strong enough for the Project Exam 2, please message your tutors. Use of a JavaScript Framework is a requirement.
-
 ## Built With
 
 - [Next.js](https://nextjs.org/)
